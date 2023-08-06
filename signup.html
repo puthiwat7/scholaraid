@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scholaraid</title>
+<link rel="stylesheet" href="styles/headerstylessignuplogin.css">
+<link rel="stylesheet" href="styles/signup.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+<link href="https://db.onlinewebfonts.com/c/cc598ebbea48ee1094091b47f5ccb750?family=Neutrif+Studio+Regular" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="body">
+  <div class="header">
+    <div class="left">
+      <img class="logoimage" src="pictures/sholaraidlogo">
+      <a href="index.html" class="scholaraidtext">Scholaraid</a>
+    </div>
+    <div class="middle">
+      <div ><a class="aboutus" href="aboutus.html">About us</a></div>
+      <div ><a class="scholarships"  href="scholarships.html">Scholarships</a></div>
+      <div ><a class="browse"  href="browse.html">Browse the Offers</a></div>
+    </div>
+    <div class="right"></div>
+    <div class="buttons">
+        <a href="signup.html"><button class="signup">Sign up</button></a>
+        <a href="signup.html"><button class="login">Log in</button></a>
+    </div>
+  </div>
+<div class="mainbody">
+  <img class="studentsimage"  body text src="pictures/students5.jpg"> 
+ 
+</div>
+<section class="container forms">
+    <div class="form login">
+        <div class="form-content">
+            <header>Login</header>
+            <form action="#">
+                <div class="field input-field">
+                    <input type="email" placeholder="Email" class="input">
+                </div>
+                <div class="field input-field">
+                    <input type="password" placeholder="Password" class="password">
+                    <i class='bx bx-hide eye-icon'></i>
+                </div>
+                <div class="form-link">
+                    <a href="#" class="forgot-pass">Are you a contributor? Click here!</a>
+                </div>
+                <div class="field button-field">
+                    <button>Login</button>
+                </div>
+            </form>
+            <div class="form-link">
+                <span>Don't have an account? <a href="#" class="link signup-link">Sign up</a></span>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="media-options">
+            <a href="#" class="field facebook">
+                <i class='bx bxl-facebook facebook-icon'></i>
+                <span>Login with Facebook</span>
+            </a>
+        </div>
+        <div class="media-options">
+            <a href="#" class="field google">
+                <img src="pictures/googlelogo" alt="" class="google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+    </div>
+    <!-- Signup Form -->
+    <div class="form signup">
+        <div class="form-content">
+            <header>Signup</header>
+            <form action="#">
+                <div class="field input-field">
+                    <input type="email" placeholder="Email" class="input">
+                </div>
+                <div class="field input-field">
+                    <input type="password" placeholder="Create password" class="password">
+                </div>
+                <div class="field input-field">
+                    <input type="password" placeholder="Confirm password" class="password">
+                    <i class='bx bx-hide eye-icon'></i>
+                </div>
+                <div class="field button-field">
+                    <button>Signup</button>
+                </div>
+            </form>
+            <div class="form-link">
+                <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="media-options">
+            <a href="#" class="field facebook">
+                <i class='bx bxl-facebook facebook-icon'></i>
+                <span>Login with Facebook</span>
+            </a>
+        </div>
+        <div class="media-options">
+            <a href="#" class="field google">
+                <img src="pictures/googlelogo" alt="" class="google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script>
+ const forms = document.querySelector(".forms"),
+      pwShowHide = document.querySelectorAll(".eye-icon"),
+      links = document.querySelectorAll(".link");
+pwShowHide.forEach(eyeIcon => {
+    eyeIcon.addEventListener("click", () => {
+        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+        
+        pwFields.forEach(password => {
+            if(password.type === "password"){
+                password.type = "text";
+                eyeIcon.classList.replace("bx-hide", "bx-show");
+                return;
+            }
+            password.type = "password";
+            eyeIcon.classList.replace("bx-show", "bx-hide");
+        })
+        
+    })
+})      
+links.forEach(link => {
+    link.addEventListener("click", e => {
+       e.preventDefault(); //preventing form submit
+       forms.classList.toggle("show-signup");
+    })
+})
+</script>
+</html>
