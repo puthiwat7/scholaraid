@@ -1,0 +1,51 @@
+.mainbody{
+  margin-top: 113px;
+  margin-left:0;
+  position:absolute;
+  }
+  .body{
+      margin-left:0px;
+  }
+  
+  .studentsimage{
+  left:0;
+  width:1920px;
+  margin-left:0px
+  
+  }
+  
+
+  
+  .mainbody .yourfuture{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    font-family: "Neutrif Studio Regular";
+    font-size:70px;
+    font-weight: bolder;
+    color:white;
+    letter-spacing: 2px;
+  }
+  
+  .mainbody .maintext{
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    font-family: "Neutrif Studio Regular";
+    font-size: 29px;
+    font-weight: 300;
+    color:white;
+    width:1200px
+
+  }
+  
+.maintext{
+  background-color:rgb(179, 179, 179);
+  opacity:0.9;
+  border-radius: 5px;
+}
+
+
+ 
+  
+  
