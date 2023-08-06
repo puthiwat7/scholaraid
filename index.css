@@ -1,0 +1,101 @@
+.mainbody{
+margin-top: 113px;
+margin-left:0;
+position:absolute;
+}
+.body{
+    margin-left:0px;
+}
+
+.studentsimage{
+left:0;
+width:1920px;
+margin-left:0px
+
+}
+
+.mainbody .startnow {
+  position: absolute;
+  top: 40.5%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  width:150px;
+  font-family: "Neutrif Studio Regular";
+}
+
+.mainbody .yourfuture{
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  font-family: "Neutrif Studio Regular";
+  font-size:70px;
+  font-weight: bolder;
+  color:white;
+  letter-spacing: 2px;
+}
+
+.mainbody .maintext{
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  font-family: "Neutrif Studio Regular";
+  font-size:40px;
+  font-weight: 300;
+  color:white;
+  width:700px
+}
+
+.startnow:hover{
+  background-color:lightgray;
+  
+}
+
+.mainbody .scrolltextcontainer{
+  display:flex;
+  position: absolute;
+  top:70%;
+  font-family: "Neutrif Studio Regular";
+  align-content: center;
+  justify-content:stretch;
+  
+}
+
+
+.scrolltext1{
+
+  font-weight: 200;
+  color:white;
+  letter-spacing: 2px;
+  font-size:40px;
+  position:absolute;
+  width:400px;  
+  top:75%;
+  margin-left:136px;
+  font-family: "Neutrif Studio Regular";
+}
+
+
+.aboutus:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
